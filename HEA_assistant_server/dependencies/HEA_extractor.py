@@ -6,9 +6,9 @@ import pathlib
 from copy import deepcopy
 import pandas as pd
 from tqdm import tqdm
-from chater import BaseAssistant
-from convert import str_to_data
-from postprocess import (
+from .chater import BaseAssistant
+from .convert import str_to_data
+from .postprocess import (
     add_doi_and_id,
     expand_dict_columns,
     filter_csv,
