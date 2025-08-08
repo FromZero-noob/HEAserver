@@ -5,8 +5,8 @@ import pathlib
 import numpy as np
 import pandas as pd
 
-from paperextractor.convert import str_to_data
-from paperextractor.utils.doi_to_name import name_to_doi
+from .convert import str_to_data
+from .utils.doi_to_name import name_to_doi
 
 
 def expand_dict_columns(file,expand_columns=None,out_dir="output",mark="_doi", old_mark="_raw"):
