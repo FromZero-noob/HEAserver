@@ -1,9 +1,9 @@
 import argparse
 import os
 
-from llmchat.chater import BaseAssistant
-from llmchat.log import logger
-from llmchat.set_key import load_env_variable, save_key_in_file
+from .chater import BaseAssistant
+from .log import logger
+from .set_key import load_env_variable, save_key_in_file
 
 
 def main():
