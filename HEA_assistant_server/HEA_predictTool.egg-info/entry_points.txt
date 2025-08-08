@@ -1,0 +1,2 @@
+[console_scripts]
+example-mcp = server:main

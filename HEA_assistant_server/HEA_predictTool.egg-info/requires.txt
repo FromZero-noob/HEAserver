@@ -1,0 +1,10 @@
+mcp
+numpy
+pandas
+featurebox
+joblib
+pandas
+arxiv
+pathlib
+requests
+bohrium-sdk>=0.10.0

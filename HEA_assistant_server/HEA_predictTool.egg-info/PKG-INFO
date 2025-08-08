@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: HEA_predictTool
+Version: 0.1.0
+Summary: predict the crystal structure of a type of high entropy alloy
+Requires-Python: >=3.10
+Requires-Dist: mcp
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: featurebox
+Requires-Dist: joblib
+Requires-Dist: pandas
+Requires-Dist: arxiv
+Requires-Dist: pathlib
+Requires-Dist: requests
+Requires-Dist: bohrium-sdk>=0.10.0
