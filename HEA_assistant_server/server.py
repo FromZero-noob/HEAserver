@@ -33,13 +33,13 @@ args = parse_args()
 mcp = FastMCP("HEA_assistant_server",host=args.host,port=args.port)
 
 #env
-HMIX_DATA_PATH =       os.getenv("HMIX_DATA_PATH", "/mcpserver/HEAserver/HEA_assistant_server/data/binary_Hmix.csv")
-SCALER_TYPE_PATH =     os.getenv("SCALER_TYPE_PATH", "/mcpserver/HEAserver/HEA_assistant_server/models/feats_scaler_type.pkl")
-SCALER_STRUC_PATH =    os.getenv("SCALER_STRUC_PATH","/mcpserver/HEAserver/HEA_assistant_server/models/feats_scaler_struc.pkl")
-SCALER_Tm_PATH =       os.getenv("SCALER_Tm_PATH","/mcpserver/HEAserver/HEA_assistant_server/models/feats_scaler_Tm.pkl")
-TYPE_MODEL_PATH =      os.getenv("TYPE_MODEL_PATH", "/mcpserver/HEAserver/HEA_assistant_server/models/Type_predict_model_XGB.pkl")
-STRUCTURE_MODEL_PATH = os.getenv("STRUCTURE_MODEL_PATH", "/mcpserver/HEAserver/HEA_assistant_server/models/Structure_predict_model.pkl")
-Tm_MODEL_PATH =        os.getenv("Tm_MODEL_PATH","/mcpserver/HEAserver/HEA_assistant_server/models/Tm_predict_model_xgb.pkl")
+HMIX_DATA_PATH =       os.getenv("HMIX_DATA_PATH", "data/binary_Hmix.csv")
+SCALER_TYPE_PATH =     os.getenv("SCALER_TYPE_PATH", "models/feats_scaler_type.pkl")
+SCALER_STRUC_PATH =    os.getenv("SCALER_STRUC_PATH","models/feats_scaler_struc.pkl")
+SCALER_Tm_PATH =       os.getenv("SCALER_Tm_PATH","models/feats_scaler_Tm.pkl")
+TYPE_MODEL_PATH =      os.getenv("TYPE_MODEL_PATH", "models/Type_predict_model_XGB.pkl")
+STRUCTURE_MODEL_PATH = os.getenv("STRUCTURE_MODEL_PATH", "models/Structure_predict_model.pkl")
+Tm_MODEL_PATH =        os.getenv("Tm_MODEL_PATH","models/Tm_predict_model_xgb.pkl")
 
 #load models
 tm_scaler = joblib.load(SCALER_Tm_PATH)
@@ -221,6 +221,7 @@ def HEA_predictor(name:List[str])->List[str]:
     return(res)
 
 if __name__ == "__main__":
-    mcp.run(transport="sse",host="0.0.0.0",port=50002)
+    mcp.run(transport="sse")
+
 
 
