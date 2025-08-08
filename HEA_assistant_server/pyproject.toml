@@ -8,6 +8,7 @@ dependencies = [
     "numpy",
     "pandas",
     "featurebox",
+    "xgboost",
     "joblib",
     "pandas",
     "arxiv",
@@ -24,4 +25,5 @@ example-mcp = "server:main"
 
 [build-system]
 requires = ["setuptools>=61.0"]
+
 build-backend = "setuptools.build_meta"
