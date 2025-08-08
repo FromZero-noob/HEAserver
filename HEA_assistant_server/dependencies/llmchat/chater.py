@@ -8,7 +8,7 @@ from typing import Any, Tuple, Union
 
 import pandas as pd
 
-from llmchat.log import logger
+from .log import logger
 
 
 class PostInitMeta(type):
